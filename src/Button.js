@@ -8,9 +8,17 @@ class Button extends React.Component{
         return {count: state.count +1}
     }
     incrementMultiple = ()=>{
-        this.setState(this.increment)
-        this.setState(this.increment)
-        this.setState(this.increment)
+        // this.setState(this.increment)
+        // this.setState(this.increment)
+        // this.setState(this.increment)
+        setTimeout(()=>{
+            this.setState({
+                count: this.state.count+1
+            })
+            this.setState({
+                count: this.state.count+1
+            })
+        },0)
     }
     componentWillMount(){
         console.log('componentWillMount is called')
