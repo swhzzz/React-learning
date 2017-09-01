@@ -2,8 +2,16 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 // import Clock from './Clock'
-import {Button} from './Button'
+// import {Button} from './Button'
 // import Test from './Test'
+// import Toggle from './Toggle'
+// import If from './If'
+// import LoginControl from './LoginControl'
+// import Loop from './Loop'
+// import Form from './Form'
+// import TextArea from './TextArea'
+// import Select from './Select'
+import Boil from './Boil'
 
 function App() {
     return (
@@ -13,8 +21,16 @@ function App() {
           <h2>Welcome to React</h2>
         </div>
         {/*<Clock/>*/}
-        <Button/>
+        {/*<Button/>*/}
         {/*<Test/>*/}
+        {/*<Toggle/>*/}
+        {/*<If sayHi="true"/>*/}
+        {/*<LoginControl/>*/}
+        {/*<Loop/>*/}
+        {/*<Form/>*/}
+        {/*<TextArea/>*/}
+          {/*<Select/>*/}
+          <Boil/>
       </div>
     );
 }

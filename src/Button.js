@@ -11,14 +11,21 @@ class Button extends React.Component{
         // this.setState(this.increment)
         // this.setState(this.increment)
         // this.setState(this.increment)
-        setTimeout(()=>{
-            this.setState({
-                count: this.state.count+1
-            })
-            this.setState({
-                count: this.state.count+1
-            })
-        },0)
+
+        // setTimeout(()=>{
+        //     this.setState({
+        //         count: this.state.count+1
+        //     })
+        //     this.setState({
+        //         count: this.state.count+1
+        //     })
+        // },0)
+        this.setState((state,props)=>({
+            count: state.count+1
+        }))
+        this.setState((state,props)=>({
+            count: state.count+1
+        }))
     }
     componentWillMount(){
         console.log('componentWillMount is called')
