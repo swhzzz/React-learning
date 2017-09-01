@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 // import Clock from './Clock'
-import Button from './Button'
+import {Button} from './Button'
 // import Test from './Test'
 
 function App() {

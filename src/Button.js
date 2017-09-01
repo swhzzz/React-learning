@@ -4,19 +4,19 @@ class Button extends React.Component{
     state = {
         count: 0
     };
-    increment=()=>{
-        this.setState({
-            count: this.state.count +1
-        })
+    increment= (state)=>{
+        return {count: state.count +1}
+    }
+    incrementMultiple = ()=>{
+        this.setState(this.increment)
+        this.setState(this.increment)
+        this.setState(this.increment)
     }
     componentWillMount(){
         console.log('componentWillMount is called')
     }
     componentDidMount(){
         console.log('componentDidMount is called')
-        this.setState({
-            count: this.state.count +1
-        })
     }
     componentWillReceiveProps(){
         console.log('componentWillReceiveProps is called')
@@ -34,8 +34,8 @@ class Button extends React.Component{
     render(){
         console.log('render is called....')
 
-        return <button onClick={this.increment}>{this.state.count}</button>
+        return <button onClick={this.incrementMultiple}>{this.state.count}</button>
     }
 }
 
-export default Button;
+export  {Button};
