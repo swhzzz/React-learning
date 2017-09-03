@@ -1,26 +1,18 @@
 import React from 'react'
-import BoilingVerdict from './BoilingVerdict'
+
 
 class Boil extends React.Component{
-    state={
-        value: '',
-        temperature: ''
-    }
-    // currentTemp = if(this.state.tempature>=100){
-    //     return <p><
-    //
-    // }
-
-    handleChange = (event)=>{
-        this.setState({value: event.target.value})
+    handleChange = (e)=>{
+        // console.log('e.target.value is:'+e.target.value)
+        this.props.handleChange(e.target.value)
     }
 
     render(){
+        // console.log(this.props)
         return (
             <fieldset>
-                <legend>Input a number: </legend>
-                <input type="text" value={this.state.value} onChange={this.handleChange}/>
-                <BoilingVerdict currentTemp={this.state.value} />
+                <legend>Enter a temperature in {this.props.scale} </legend>
+                <input type="text" value={this.props.currentTemp} onChange={this.handleChange} />
             </fieldset>
         )
     }

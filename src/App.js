@@ -11,7 +11,8 @@ import './App.css';
 // import Form from './Form'
 // import TextArea from './TextArea'
 // import Select from './Select'
-import Boil from './Boil'
+// import Boil from './Boil'
+import TemperatureSwitch from './TemperatureSwitch'
 
 function App() {
     return (
@@ -29,8 +30,9 @@ function App() {
         {/*<Loop/>*/}
         {/*<Form/>*/}
         {/*<TextArea/>*/}
-          {/*<Select/>*/}
-          <Boil/>
+        {/*<Select/>*/}
+          {/*<Boil/>*/}
+          <TemperatureSwitch/>
       </div>
     );
 }
